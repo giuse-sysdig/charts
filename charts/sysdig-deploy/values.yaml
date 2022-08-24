@@ -5,6 +5,7 @@ global:
     accessKey: ""
     accessKeySecret: ""
     region: "us1"
+    tags: {}
   proxy: {}
   kspm:
     deploy: false
