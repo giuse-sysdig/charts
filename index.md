@@ -17,7 +17,7 @@ $ helm repo update
 
 ## Use this charts repository
 
-Once you have added this _charts repository_ to your local `helm`, you can start using it:
+Once you have added the _charts repository_ to your local `helm`, you can start using it:
 
 ```bash
 # List all charts:
