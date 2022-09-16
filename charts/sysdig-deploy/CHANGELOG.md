@@ -4,6 +4,11 @@
 
 This file documents all notable changes to Sysdig's sysdig-deploy Helm Chart. The release numbering uses [semantic versioning](http://semver.org).
 
+## v1.3.16
+
+### Minor changes
+* Bumped agent to 1.5.23 to include the usage of global.sysdig.tags
+* Added note for override of global tag over a local tag
 ## v1.3.15
 
 ### Minor changes
