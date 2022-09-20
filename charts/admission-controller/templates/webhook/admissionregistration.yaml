@@ -24,12 +24,6 @@ webhooks:
     operations: ["CREATE", "UPDATE"]
     resources:
     - "pods"
-    - "deployments"
-    - "replicasets"
-    - "statefulsets"
-    - "daemonsets"
-    - "jobs"
-    - "cronjobs"
     scope: "*"
   clientConfig:
     service:

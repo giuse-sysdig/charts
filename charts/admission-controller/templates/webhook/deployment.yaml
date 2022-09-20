@@ -111,6 +111,8 @@ spec:
             - name: cert
               mountPath: /cert
               readOnly: true
+            - name: tmp-dir
+              mountPath: /tmp
             {{- if .Values.webhook.ssl.ca.cert }}
             - name: ca-cert
               mountPath: /ca-cert
@@ -127,6 +129,8 @@ spec:
           secret:
             secretName: {{ include "admission-controller.webhook.fullname" . }}-ca
       {{- end }}
+        - name: tmp-dir
+          emptyDir: {}
     {{- with .Values.webhook.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
