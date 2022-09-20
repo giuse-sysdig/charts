@@ -70,6 +70,9 @@ spec:
             {{- end }}
           imagePullPolicy: {{ .Values.webhook.image.pullPolicy }}
           env:
+            {{- if .Values.webhook.extraEnvVars }}
+            {{- toYaml .Values.webhook.extraEnvVars | nindent 12 }}
+            {{- end }}
             {{- if (or .Values.webhook.httpProxy .Values.webhook.httpsProxy) }}
             - name: HTTP_PROXY
               value: {{ .Values.webhook.httpProxy }}

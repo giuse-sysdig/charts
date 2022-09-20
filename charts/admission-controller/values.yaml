@@ -208,6 +208,9 @@ webhook:
     # HTTP serve port where the requests will be served from
     port: 5000
 
+  # Extra environment variables to add to the webhook deployment
+  extraEnvVars: []
+
 
 scc:
   # Enable the creation of Security Context Constraints in Openshift
