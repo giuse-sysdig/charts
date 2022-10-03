@@ -301,6 +301,7 @@ nodeImageAnalyzer:
                 operator: In
                 values:
                   - amd64
+                  - arm64
               - key: kubernetes.io/os
                 operator: In
                 values:
@@ -310,6 +311,7 @@ nodeImageAnalyzer:
                 operator: In
                 values:
                   - amd64
+                  - arm64
               - key: beta.kubernetes.io/os
                 operator: In
                 values:
@@ -472,7 +474,7 @@ nodeAnalyzer:
 
     env: {}
   benchmarkRunner:
-    deploy: true
+    deploy: false
     includeSensitivePermissions: false
 
     image:
